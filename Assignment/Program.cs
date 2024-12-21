@@ -28,8 +28,8 @@
             //a) Yes
             #endregion
 
-            #region
-
+            #region Question 7:In C#, can an interface have explicit access modifiers for its members?
+            //b) No, all members are implicitly public
             #endregion
 
             #region
