@@ -12,6 +12,28 @@
             //a)Private
             #endregion
 
+            #region Question 3:Can an interface contain fields in C#?
+            //b) No
+            #endregion
+
+            #region
+
+            #endregion
+
+            #region
+
+            #endregion
+
+            #region
+
+            #endregion
+
+            #region
+
+            #endregion
+
+
+
 
         }
     }
