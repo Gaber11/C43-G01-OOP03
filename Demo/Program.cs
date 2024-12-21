@@ -66,17 +66,27 @@ namespace Demo
             //refBase.A = 10;
             //refBase.MyFun01(); //valid [new]
             //refBase.MyFun02(); //valid [override]
-             
+
             //refBase.B = 20; //invalid
 
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             #endregion
 
+            #region 5 - Not Binding
+            //Reference from child ==> Object from parent [casting]
+            //Not Binding
+            //TypeB typeB = (TypeB)new TypeA(1);
+            //Binding
+            //TypeA typeA = new TypeB(1, 2);
+            //TypeB typeB1 = (TypeB) typeA;  //valid [Assign object from TypeB to reference from 
+
+
+            #endregion
         }
     }
 }
