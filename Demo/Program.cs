@@ -1,4 +1,5 @@
 ﻿using Demo.Bunding;
+using Demo.interfaces;
 using Demo.Polymorphism_OverRiding;
 
 namespace Demo
@@ -150,14 +151,32 @@ namespace Demo
             //typeC.MyFun01(); // I am grand child
             //typeC.MyFun02(); //TypeC
 
-           // TypeD typeD = new TypeE(1, 2, 3, 4, 5);
-           // typeD.MyFun01(); //I am child of grand child
-           // typeD.MyFun02(); //TypeE [A,B,C,D,E]
+            // TypeD typeD = new TypeE(1, 2, 3, 4, 5);
+            // typeD.MyFun01(); //I am child of grand child
+            // typeD.MyFun02(); //TypeE [A,B,C,D,E]
 
 
             #endregion
 
+            #region 8 - Interface
+            // is a code contract between 2 developer
+            //  IMyType myType = new IMyType();  ==> invalid
+            //You can not create object from interface
 
+          //  IMyType myType; //creation reference
+            //Reference located in stack [4bytes]
+
+            //Reference from interface can refer to object from class or struct that implemented
+
+            //IMyType mytype = new MyType();
+            //mytype.Id = 10;
+            //mytype.MyFun(10);
+            //mytype.Print(); //Only way to access defualt implemented method
+
+
+
+
+            #endregion
 
         }
     }
