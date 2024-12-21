@@ -1,9 +1,14 @@
-﻿namespace Assignment
+﻿using Assignment.Interface;
+using Assignment.Interfaces;
+
+namespace Assignment
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            //********************************** -Part1- ******************************************\\
+
             #region Question 1:What is the primary purpose of an interface in C#?
             //b) To define a blueprint for a class
             #endregion
@@ -43,8 +48,18 @@
             #region Question 10: How can a C# class implement multiple interfaces?
             //c) By separating interface names with commas
             #endregion
+            //*******************************************************************************\\
+            //************************************* -Part2- ******************************************\\
+            #region Question 01: Define an interface named IShape with a property Area and a method DisplayShapeInfo. Create two interfaces, ICircle and IRectangle, that inherit from IShape. Implement these interfaces in classes Circle and Rectangle. Test your implementation by creating instances of both classes and displaying their shape information.
+            //Circle information
+            //IShape circle = new Circle(4);
+            //circle.DisplayShapeInfo();
 
+            //rectangle information
+            //IShape rectangle = new Rectangle(6,8);
+           // rectangle.DisplayShapeInfo();
 
+            #endregion
 
         }
     }
