@@ -1,4 +1,5 @@
-﻿using Demo.Polymorphism_OverRiding;
+﻿using Demo.Bunding;
+using Demo.Polymorphism_OverRiding;
 
 namespace Demo
 {
@@ -16,9 +17,18 @@ namespace Demo
         static double SumTwoAndDouble(double X, int Y)
         {
             return X + Y;
-        } 
+        }
         #endregion
 
+        static void ProcessEmployee(Employee employee)
+        {
+            if (employee is not null)
+            {
+                employee.GetEmployeeType(); //Parent
+                employee.GetEmployeeData(); //FullTimeEmployee
+            }
+
+        }
         static void Main(string[] args)
         {
 
@@ -87,6 +97,34 @@ namespace Demo
 
 
             #endregion
+
+            #region 6 - Binding Ex 1
+            //FullTimeEmployee fullTimeEmployee = new FullTimeEmployee(1, "Gaber", 20, 2000);
+            //Console.WriteLine(fullTimeEmployee);
+            //ProcessEmployee(fullTimeEmployee);
+
+            //// PartTimeEmployee partTimeEmployee = new PartTimeEmployee();
+
+
+            ////Object intializer  .NET 6 Features
+            //PartTimeEmployee partTimeEmployee1 = new PartTimeEmployee()
+            //{
+            //    Id = 10,
+            //    Name = "Gaber",
+            //    Age = 22,
+            //    CountOfHours = 20,
+            //    HourRate = 19.2
+
+            //};
+
+            //ProcessEmployee(partTimeEmployee1);
+
+            #endregion
+
+
+
+
+
         }
     }
 }
