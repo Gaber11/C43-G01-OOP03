@@ -8,7 +8,9 @@
             //b) To define a blueprint for a class
             #endregion
 
-
+            #region Question 2:Which of the following is NOT a valid access modifier for interface members in C#?
+            //a)Private
+            #endregion
 
 
         }
