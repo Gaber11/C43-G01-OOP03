@@ -32,13 +32,13 @@
             //b) No, all members are implicitly public
             #endregion
 
-            #region
-
+            #region Question 8: What is the purpose of an explicit interface implementation in C#?
+           // b) To provide a clear separation between interface and class members
             #endregion
 
-            #region
+        #region
 
-            #endregion
+        #endregion
 
 
 
