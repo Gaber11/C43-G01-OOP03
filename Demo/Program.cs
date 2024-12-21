@@ -7,31 +7,45 @@ namespace Demo
     internal class Program
     {
         #region Functions
-        static int SumTwo(int X, int Y)
-        {
-            return X + Y;
-        }
-        static int SumThree(int X, int Y, int Z)
-        {
-            return X + Y + Z;
-        }
-        static double SumTwoAndDouble(double X, int Y)
-        {
-            return X + Y;
-        }
+        //static int SumTwo(int X, int Y)
+        //{
+        //    return X + Y;
+        //}
+        //static int SumThree(int X, int Y, int Z)
+        //{
+        //    return X + Y + Z;
+        //}
+        //static double SumTwoAndDouble(double X, int Y)
+        //{
+        //    return X + Y;
+        //}
         #endregion
 
-        static void ProcessEmployee(Employee employee)
-        {
-            if (employee is not null)
-            {
-                employee.GetEmployeeType(); //Parent
-                employee.GetEmployeeData(); //FullTimeEmployee
-            }
+        //static void ProcessSeries(ISeries series)
+        //{
+        //    if (series != null)
+        //    {
+        //        for (int i = 0; i < 10; i++)
+        //        {
+        //            Console.Write(series.Current + " ");
+        //            series.GetNext();
+        //        }
+        //        Console.WriteLine();
+        //        series.Reset();
+        //    }
+        //}
+            //static void ProcessEmployee(Employee employee)
+            //{
+            //    if (employee is not null)
+            //    {
+            //        employee.GetEmployeeType(); //Parent
+            //        employee.GetEmployeeData(); //FullTimeEmployee
+            //    }
 
-        }
-        static void Main(string[] args)
-        {
+            //}
+
+            static void Main(string[] args)
+            {
 
             #region 2 - Polymorphism - Overloading
 
@@ -163,7 +177,7 @@ namespace Demo
             //  IMyType myType = new IMyType();  ==> invalid
             //You can not create object from interface
 
-          //  IMyType myType; //creation reference
+            //  IMyType myType; //creation reference
             //Reference located in stack [4bytes]
 
             //Reference from interface can refer to object from class or struct that implemented
@@ -178,6 +192,20 @@ namespace Demo
 
             #endregion
 
+            #region 9 - Interface Ex 2
+            // 0 2 4 6 8 10  Current , GetNext(){current +=2} , Reset(){current = 0;}
+
+            //  0 3 6 9 12 15
+
+           //SeriesByTwo seriesByTwo = new SeriesByTwo();
+           // ProcessSeries(seriesByTwo);
+           // Console.WriteLine("=========================================");
+           // SeriesByThree seriesByThree = new SeriesByThree();
+           // ProcessSeries(seriesByThree);
+
+            #endregion
+
         }
     }
-}
+    }
+
