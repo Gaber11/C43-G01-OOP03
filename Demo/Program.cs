@@ -56,7 +56,26 @@ namespace Demo
 
             #endregion
 
+            #region 4 - Binding
+            //reference from parent ==> object from child
+            //TypeA refBase;
+            //create ref from TypeA.
+            //in stack [4bytes]
+            //refer to null
+            //refBase = new TypeB(1, 2);
+            //refBase.A = 10;
+            //refBase.MyFun01(); //valid [new]
+            //refBase.MyFun02(); //valid [override]
+             
+            //refBase.B = 20; //invalid
 
+            
+            
+            
+            
+            
+            
+            #endregion
 
         }
     }
