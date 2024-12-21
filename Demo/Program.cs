@@ -121,7 +121,41 @@ namespace Demo
 
             #endregion
 
+            #region 7 - Binding Ex 2
+            //TypeB typeB = new TypeC(1, 2, 3); //TypeB is direct parent for TypeC
+            //typeB.MyFun01(); // i am child
+            //typeB.MyFun02(); //TypeC ==> A,B,C
+            //typeB.A = 20;
+            //typeB.B = 80;
+            // typeB.C = 8;   // Invalid
 
+            //TypeA typeA = new TypeC(5,4,7); //typeA is indirect Parnet of TypeC
+            //typeA.MyFun01(); //I am Parent ==> static binding
+            //typeA.MyFun02(); // TypeC ==> A,B,C ==> dynamic b
+            //typeA.A = 20;
+            //typeA.B = 7; //Invalid
+            //typeA.C = 9; //Invalid
+            //===================================
+
+            //TypeA typeA = new TypeE(1,2,3,4,5);
+            //TypeB typeB = new TypeE(1,2,3,4,5);
+            //TypeC typeC = new TypeE(1,2,3,4,5);
+            //typeA.MyFun01(); //I am Parent
+            //typeA.MyFun02(); // TypeC
+            //Console.WriteLine("===================================");
+            //typeB.MyFun01(); //I am child
+            //typeB.MyFun02(); //Type C
+            //Console.WriteLine("===================================");
+
+            //typeC.MyFun01(); // I am grand child
+            //typeC.MyFun02(); //TypeC
+
+           // TypeD typeD = new TypeE(1, 2, 3, 4, 5);
+           // typeD.MyFun01(); //I am child of grand child
+           // typeD.MyFun02(); //TypeE [A,B,C,D,E]
+
+
+            #endregion
 
 
 
