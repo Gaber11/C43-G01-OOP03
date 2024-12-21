@@ -17,11 +17,11 @@
             #endregion
 
             #region Question 4: In C#, can an interface inherit from another interface?
-           // b) Yes, interfaces can inherit from multiple interfaces
+            // b) Yes, interfaces can inherit from multiple interfaces
             #endregion
 
-            #region
-
+            #region Question 5: Which keyword is used to implement an interface in a class in C#?
+            //d) implements ":"
             #endregion
 
             #region
